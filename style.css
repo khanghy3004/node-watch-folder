@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+@-webkit-keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px !important;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+header {
+  width: 100%;
+  height: 30px;
+
+  background: #007acc;
+
+  -webkit-animation: gradient 120s ease infinite;
+  -moz-animation: gradient 120s ease infinite;
+  animation: gradient 120s ease infinite;
+}
+
+.logo-nav {
+  width: auto;
+  height: 100%;
+}
+
+.draggable {
+  width: calc(100% - 135px);
+  float: left;
+  height: 100%;
+  -webkit-app-region: drag;
+}
+
+.button {
+  transition: 0.2s ease-in-out;
+  background-color: rgba(0, 0, 0, 0);
+  color: #FFFFFF;
+
+  width: 45px;
+  height: 100%;
+
+  float: right;
+  text-align: center;
+
+  cursor: default;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.2s ease-in-out;
+}
+
+.exit > i {
+  position: relative;
+  top: 7px;
+}
+
+.maximize > i {
+  position: relative;
+  top: 7px;
+}
+
+/* Style for the header */
+#header {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#btn-remote {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #4CAF50;
+}
+
+#btn-remote:hover {
+  opacity: 0.85;
+  cursor: pointer;
+  user-select: none;
+}
+
+#btn-local {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #b18d1c;
+}
+
+#btn-local:hover {
+  opacity: 0.85;
+  cursor: pointer;
+  user-select: none;
+}
+
+#title {
+  font-size: 24px;
+}
+
+#status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #ff7f50;
+}
+
+/* Style for the tabs */
+#tabs {
+  background-color: #f0f0f0;
+  display: flex;
+}
+
+.tab {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: #d9d9d9;
+}
+
+/* Style for the content area */
+#content {
+  padding: 10px;
+  border: 1px solid #d9d9d9;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Style for the history table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "watch-folder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/electron ."
+  },
+  "author": "Khang Hy",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^24.3.0"
+  },
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "ftp": "^0.3.10"
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Folder Sync</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="draggable"></div>
+    <div class="button exit" id="btn-close">
+      <i class="material-icons">
+        close
+      </i>
+    </div>
+    <div class="button maximize" id="btn-maximize">
+      <i class="material-icons">
+        check_box_outline_blank
+      </i>
+    </div>
+    <div class="button minimize" id="btn-minimize">
+      <i class="material-icons">
+        minimize
+      </i>
+    </div>
+  </header>
+  <div id="header">
+    <h1 id="title">My Folder Sync</h1>
+    <div id="btn-local">Local ➜ Remote</div>
+    <div id="btn-remote">Remote ➜ Local</div>
+    <div id="status">Not Synced</div>
+  </div>
+  <div id="tabs">
+    <div class="tab" id="sync-tab">Sync</div>
+    <div class="tab" id="history-tab">History</div>
+    <div class="tab" id="remote-tab">Remote</div>
+  </div>
+  <div id="content">
+    <div class="tab-content" id="sync-content">
+      <p>Syncing...</p>
+    </div>
+    <div class="tab-content" id="history-content">
+      <table>
+        <thead>
+          <tr>
+            <th>File Name</th>
+            <th>Date Synced</th>
+            <th>Sync Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Display history of syncs here -->
+        </tbody>
+      </table>
+    </div>
+    <div class="tab-content" id="remote-content">
+      <table id="table-remote">
+        <thead>
+          <tr>
+            <th>File Name</th>
+            <th>Size</th>
+            <th>Modified At</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Display history of syncs here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>
