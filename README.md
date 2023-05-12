@@ -1,6 +1,4 @@
-# node-watch-folder
-
-An FTP data synchronization application written in Electron
+# FTP data synchronization application written in Electron
 
 ![node-watch-folder-screenshot](Screenshot.png)
 ## Installation and Use
